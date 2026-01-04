@@ -238,15 +238,15 @@ if UserInputService.TouchEnabled then
 
     local Button = Instance.new("TextButton")
     Button.Parent = HideGui
-    Button.Size = UDim2.new(0,65,0,65)
+    Button.Size = UDim2.new(0,75,0,75)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
-    Button.Text = "EMOTE\nKAIOX HUH🗯️"
+    Button.Text = "EMOTE\nKAIOX HUB🗯️"
     Button.TextScaled = true
     Button.TextColor3 = Color3.new(1,1,1)
     Button.Font = Enum.Font.FredokaOne
     Button.BackgroundColor3 = Color3.new(0,0,0)
-    Button.BackgroundTransparency = 0.2
+    Button.BackgroundTransparency = 0.5
     Button.Draggable = true
     Button.Active = true
 
@@ -526,8 +526,8 @@ local function createConfirmation(title, message, beg, callback)
     noButton.Position= UDim2.new(0, 0, 0, 0)
     noButton.BackgroundColor3= Color3.fromRGB(80, 80, 80)
     noButton.TextColor3= Color3.new(1, 1, 1)
-    noButton.Text= "NO"
-    noButton.Font= Enum.Font.GothamBold
+    noButton.Text= "NÃO"
+    noButton.Font= Enum.Font.FredokaOne
     noButton.TextScaled = true
     noButton.ZIndex= 104
     noButton.Parent= buttonContainer
@@ -540,8 +540,8 @@ local function createConfirmation(title, message, beg, callback)
     yesButton.Position= UDim2.new(0.55, 0, 0, 0)
     yesButton.BackgroundColor3= Color3.fromRGB(180, 60, 60)
     yesButton.TextColor3= Color3.new(1, 1, 1)
-    yesButton.Text= "YES"
-    yesButton.Font= Enum.Font.GothamBold
+    yesButton.Text= "SIM"
+    yesButton.Font= Enum.Font.FredokaOne
     yesButton.TextScaled= true
     yesButton.ZIndex= 104
     yesButton.Parent= buttonContainer
@@ -554,20 +554,18 @@ local function createConfirmation(title, message, beg, callback)
         confirmationFrame:Destroy()
     end)
     local ClickCount = 0
-local maxClicks = 3
+local maxClicks = 1
 local startColor = yesButton.BackgroundColor3 -- initial color
 local endColor = Color3.fromRGB(255, 0, 0)   -- full red
 
-yesButton.MouseButton1Click:Connect(function()
-    SoundPlay.CustomId = "rbxassetid://131708837601656"
-    
+
     ClickCount = ClickCount + 1
     
     -- Lerp color between startColor and full red based on ClickCount
     local t = ClickCount / maxClicks
     yesButton.BackgroundColor3 = startColor:Lerp(endColor, t)
     
-    yesButton.Text = "Yes (" .. ClickCount .. "/3)"
+    yesButton.Text = "Yes (" .. ClickCount .. "/1)"
     
     if ClickCount >= maxClicks then
         confirmationFrame:Destroy()
