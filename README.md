@@ -1,4 +1,4 @@
--- KILL ME KILL ME ARLEADY AHHGHRHRHEHEHEH- GAZE.EXE HERE 
+-- FEITO POR KAIOX 
 if getgenv().EmotesGay == true then
 return end
 getgenv().EmotesGay = true
@@ -77,7 +77,7 @@ local StarterGui = game:GetService("StarterGui")
 
 repeat
 local success, result = pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/NOT-MINE/refs/heads/main/AkaliNotify"))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox/refs/heads/main/README.md"))()
 	end)
 
 	if success then
@@ -158,7 +158,7 @@ end)
  TweenService= Services.TweenService
  
 EMOTES_FILE= "emotes.json"
-defaultEmotes= loadstring(game:HttpGet('https://raw.githubusercontent.com/Gazer-Ha/Gaze-stuff/refs/heads/main/Default%20Emote'))()
+defaultEmotes= loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox2/refs/heads/main/README.md"))()
 local Screen= setmetatable({}, {
 __index= function(_, key)
 local cam= workspace.CurrentCamera
