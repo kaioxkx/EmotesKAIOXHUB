@@ -526,7 +526,7 @@ local function createConfirmation(title, message, beg, callback)
     noButton.Position= UDim2.new(0, 0, 0, 0)
     noButton.BackgroundColor3= Color3.fromRGB(80, 80, 80)
     noButton.TextColor3= Color3.new(1, 1, 1)
-    noButton.Text= "NÃO"
+    noButton.Text= "NO"
     noButton.Font= Enum.Font.FredokaOne
     noButton.TextScaled = true
     noButton.ZIndex= 104
@@ -540,7 +540,7 @@ local function createConfirmation(title, message, beg, callback)
     yesButton.Position= UDim2.new(0.55, 0, 0, 0)
     yesButton.BackgroundColor3= Color3.fromRGB(180, 60, 60)
     yesButton.TextColor3= Color3.new(1, 1, 1)
-    yesButton.Text= "SIM"
+    yesButton.Text= "YES"
     yesButton.Font= Enum.Font.FredokaOne
     yesButton.TextScaled= true
     yesButton.ZIndex= 104
