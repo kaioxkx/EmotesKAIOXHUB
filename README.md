@@ -1,4 +1,4 @@
--- feito por KAIOX 
+-- KILL ME KILL ME ARLEADY AHHGHRHRHEHEHEH- GAZE.EXE HERE 
 if getgenv().EmotesGay == true then
 return end
 getgenv().EmotesGay = true
@@ -77,7 +77,7 @@ local StarterGui = game:GetService("StarterGui")
 
 repeat
 local success, result = pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox/refs/heads/main/README.md"))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/NOT-MINE/refs/heads/main/AkaliNotify"))()
 	end)
 
 	if success then
@@ -95,14 +95,47 @@ function DoNotif(title, text, duration)
 SoundPlay.CustomId = "rbxassetid://6655708496"
 	Notify({
 		Title = title or adminName or nil,
-		Description = text or "notificação...",
-		Duration = duration or 3
+		Description = text or "something",
+		Duration = duration or 5
 	})
 end
 
 
+ SoundPlay.CustomId = "rbxassetid://2084290015"
+ DoNotif("Origin V 5.16","RandomEmote BugFix", 10)
+
+
 local LineStuff = {
-    "Emotes kaiox",
+    "applied duct tape..",
+    "99 new bugs shipped!",
+    "lag optimized (™ placebo)",
+    "patch v0.0.0.1.1.1b",
+    "free bugs DLC",
+    "oops all errors",
+    "syntax% any% WR attempt",
+    "fixed nothing, broke everything",
+    "hotfix for the hotfix of the hotfix",
+    "added new ways to crash",
+    "commit message: 'final_final_REALfix'",
+    "lag machine now 20% faster",
+    "deleted prod on accident..",
+    "balance patch (everything worse)",
+    "code works on my PC™",
+    "early access to more bugs",
+    "new feature: random crashes",
+    "speedrun to blue screen",
+    "patch notes redacted ",
+    "implemented spaghetti mode ",
+    "downgrade disguised as upgrade",
+    "half a fix, twice the issues",
+    "added bug multiplier",
+    "AI wrote this update, blame it",
+    "release notes missing",
+    "debug mode left on (oops)",
+    "typo patch (added new typo)",
+    "rollback simulator v2",
+    "minor fixes, major disasters",
+    "randomized everything for fun",
 }
 
 local function GazePain()
@@ -110,7 +143,7 @@ local function GazePain()
 end
 
 task.delay(10, function()
-    DoNotif(":3 Emotes","Bem vindo!", 5)
+    DoNotif(":3 Emotes","Another day..", 5)
 end)
 
 task.delay(12, function()
@@ -125,7 +158,7 @@ end)
  TweenService= Services.TweenService
  
 EMOTES_FILE= "emotes.json"
-defaultEmotes= loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox2/refs/heads/main/README.md"))()
+defaultEmotes= loadstring(game:HttpGet('https://raw.githubusercontent.com/Gazer-Ha/Gaze-stuff/refs/heads/main/Default%20Emote'))()
 local Screen= setmetatable({}, {
 __index= function(_, key)
 local cam= workspace.CurrentCamera
@@ -240,10 +273,10 @@ if UserInputService.TouchEnabled then
     Button.Size = UDim2.new(0,60,0,60)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
-    Button.Text = "emotes"
+    Button.Text = ":3"
     Button.TextScaled = true
     Button.TextColor3 = Color3.new(1,1,1)
-    Button.Font = Enum.Font.FredokaOne
+    Button.Font = Enum.Font.SourceSansBold
     Button.BackgroundColor3 = Color3.new(0,0,0)
     Button.BackgroundTransparency = 0.2
     Button.Draggable = true
@@ -286,9 +319,9 @@ AllAround(topBar, 12)
  title= Instance.new("TextLabel")
 title.Size= UDim2.new(0, scale("X", 80), 0, scale("Y", 45))
 title.BackgroundTransparency= 1
-title.Text= "Emotes Kaiox hub"
+title.Text= ":3 Emotes"
 title.TextColor3= Color3.new(1, 1, 1)
-title.Font= Enum.Font.FredokaOne
+title.Font= Enum.Font.SourceSansBold
 title.TextScaled= true
 title.TextXAlignment= Enum.TextXAlignment.Left
 title.Position= UDim2.new(0, 5, 0, 0)
@@ -298,9 +331,9 @@ gazeLabel = Instance.new("TextLabel")
 gazeLabel.Size = UDim2.new(0, scale("X", 70), 0, scale("Y", 28))
 gazeLabel.Position = UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 gazeLabel.BackgroundTransparency = 1
-gazeLabel.Text = "POR KAIOX"
+gazeLabel.Text = "By Gaze_"
 gazeLabel.TextColor3 = Color3.new(1, 1, 1)
-gazeLabel.Font = Enum.Font.FredokaOne
+gazeLabel.Font = Enum.Font.Gotham
 gazeLabel.TextScaled = true
 gazeLabel.TextXAlignment = Enum.TextXAlignment.Right
 gazeLabel.Parent = topBar
@@ -310,9 +343,9 @@ searchBox.Size= UDim2.new(0, scale("X", 200), 0, scale("Y", 28))
 searchBox.Position= UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 searchBox.BackgroundColor3= Color3.fromRGB(30, 30, 30)
 searchBox.TextColor3= Color3.new(1, 1, 1)
-searchBox.PlaceholderText= "pesquise emotes..."
+searchBox.PlaceholderText= "Search emotes..."
 searchBox.PlaceholderColor3= Color3.new(0.7, 0.7, 0.7)
-searchBox.Font= Enum.Font.FredokaOne
+searchBox.Font= Enum.Font.Gotham
 searchBox.TextScaled= true
 searchBox.Text= ""
 searchBox.ClearTextOnFocus= false
@@ -327,7 +360,7 @@ minButton.Position= UDim2.new(1, -scale("X", 95), 0.5, -scale("Y", 17.5))
 minButton.BackgroundTransparency= 1
 minButton.TextColor3= Color3.new(1, 1, 1)
 minButton.Text= "-"
-minButton.Font= Enum.Font.FredokaOne
+minButton.Font= Enum.Font.GothamBold
 minButton.TextScaled= true
 minButton.ZIndex= 3
 minButton.Parent= topBar
@@ -339,7 +372,7 @@ closeButton.Position= UDim2.new(1, -scale("X", 65), 0.5, -scale("Y", 17.5))
 closeButton.BackgroundTransparency= 1
 closeButton.TextColor3= Color3.new(1, 1, 1)
 closeButton.Text= "×"
-closeButton.Font= Enum.Font.FredokaOne
+closeButton.Font= Enum.Font.GothamBold
 closeButton.TextScaled= true
 closeButton.ZIndex= 3
 closeButton.Parent= topBar
@@ -390,7 +423,7 @@ createGradient(filterFrame, Color3.fromRGB(50, 50, 50), Color3.fromRGB(40, 40, 4
     b.Size= UDim2.new(1, 0, 1, 0)
     b.BackgroundColor3= Color3.fromRGB(70, 70, 70)
     b.TextColor3= Color3.new(1, 1, 1)
-    b.Font= Enum.Font. FredokaOne
+    b.Font= Enum.Font.GothamBold
     b.TextScaled= true
     b.Text= txt
     b.AutoButtonColor= false
@@ -486,7 +519,7 @@ local function createConfirmation(title, message, beg, callback)
     titleLbl.BackgroundColor3= Color3.fromRGB(70, 70, 70)
     titleLbl.Text= title
     titleLbl.TextColor3= Color3.new(1, 1, 1)
-    titleLbl.Font= Enum.Font.FredokaOne
+    titleLbl.Font= Enum.Font.GothamBold
     titleLbl.TextScaled= true
     titleLbl.ZIndex= 103
     titleLbl.Parent= dialog
@@ -497,10 +530,10 @@ local function createConfirmation(title, message, beg, callback)
     messageLbl.Size= UDim2.new(1, -scale("X", 20), 0, scale("Y", 50))
     messageLbl.Position= UDim2.new(0, scale("X", 10), 0, scale("Y", 45))
     messageLbl.BackgroundTransparency= 1
-    messageLbl.Text= mensagem...
+    messageLbl.Text= message
     messageLbl.TextColor3= Color3.new(1, 1, 1)
     messageLbl.TextWrapped= true
-    messageLbl.Font= Enum.Font.FredokaOne
+    messageLbl.Font= Enum.Font.Gotham
     messageLbl.TextScaled= true
     messageLbl.ZIndex= 103
     messageLbl.Parent= dialog
@@ -509,10 +542,10 @@ local function createConfirmation(title, message, beg, callback)
     begLbl.Size= UDim2.new(1, -scale("X", 20), 0, scale("Y", 30))
     begLbl.Position= UDim2.new(0, scale("X", 10), 0, scale("Y", 95))
     begLbl.BackgroundTransparency= 1
-    begLbl.Text= Fechar
+    begLbl.Text= beg
     begLbl.TextColor3= Color3.new(1, 0.3, 0.3)
     begLbl.TextWrapped= true
-    begLbl.Font= Enum.Font.FredokaOne
+    begLbl.Font= Enum.Font.GothamBlack
     begLbl.TextScaled= true
     begLbl.ZIndex= 103
     begLbl.Parent= dialog
@@ -529,8 +562,8 @@ local function createConfirmation(title, message, beg, callback)
     noButton.Position= UDim2.new(0, 0, 0, 0)
     noButton.BackgroundColor3= Color3.fromRGB(80, 80, 80)
     noButton.TextColor3= Color3.new(1, 1, 1)
-    noButton.Text= "NÃO"
-    noButton.Font= Enum.Font.FredokaOne
+    noButton.Text= "NO"
+    noButton.Font= Enum.Font.GothamBold
     noButton.TextScaled = true
     noButton.ZIndex= 104
     noButton.Parent= buttonContainer
@@ -543,8 +576,8 @@ local function createConfirmation(title, message, beg, callback)
     yesButton.Position= UDim2.new(0.55, 0, 0, 0)
     yesButton.BackgroundColor3= Color3.fromRGB(180, 60, 60)
     yesButton.TextColor3= Color3.new(1, 1, 1)
-    yesButton.Text= "SIM"
-    yesButton.Font= Enum.Font.FredokaOne
+    yesButton.Text= "YES"
+    yesButton.Font= Enum.Font.GothamBold
     yesButton.TextScaled= true
     yesButton.ZIndex= 104
     yesButton.Parent= buttonContainer
@@ -601,8 +634,9 @@ end
 
 closeButton.MouseButton1Click:Connect(function()
     createConfirmation(
-        "FECHAR EMOTES", 
-        "DESEJA FECHAR?",
+        "CLOSE GUI", 
+        "ARE YOU SURE YOU WANT TO CLOSE THIS COOL EMOTE GUI?",
+        "PLEASE DON'T CLOSE ME!",
         function()
             gui:Destroy()
             getgenv().EmotesGay = false
@@ -694,9 +728,9 @@ end
     local titleLabel= Instance.new("TextLabel")
     titleLabel.Size= UDim2.new(0, scale("X", 250), 1, 0)
     titleLabel.BackgroundTransparency= 1
-    titleLabel.Text= "Editar emote: "..emote.n
+    titleLabel.Text= "Edit Emote: "..emote.n
     titleLabel.TextColor3= Color3.new(1, 1, 1)
-    titleLabel.Font= Enum.Font.FredokaOne
+    titleLabel.Font= Enum.Font.GothamBold
     titleLabel.TextScaled = true
     titleLabel.TextXAlignment= Enum.TextXAlignment.Left
     titleLabel.Position= UDim2.new(0, scale("X", 15), 0, 0)
@@ -710,7 +744,7 @@ end
     editMinButton.BackgroundTransparency= 1
     editMinButton.TextColor3= Color3.new(1, 1, 1)
     editMinButton.Text= "-"
-    editMinButton.Font= Enum.Font.FredokaOne
+    editMinButton.Font= Enum.Font.GothamBold
     editMinButton.TextScaled = true
     editMinButton.ZIndex= 52
     editMinButton.Parent= titleBar
@@ -722,7 +756,7 @@ end
     editCloseButton.BackgroundTransparency= 1
     editCloseButton.TextColor3= Color3.new(1, 1, 1)
     editCloseButton.Text= "×"
-    editCloseButton.Font= Enum.Font.FredokaOne
+    editCloseButton.Font= Enum.Font.GothamBold
     editCloseButton.TextScaled= true
     editCloseButton.ZIndex= 52
     editCloseButton.Parent= titleBar
@@ -776,7 +810,7 @@ end
     previewLabel.BackgroundTransparency= 1
     previewLabel.Text= emote.n
     previewLabel.TextColor3= Color3.new(1, 1, 1)
-    previewLabel.Font= Enum.Font.FredokaOne
+    previewLabel.Font= Enum.Font.GothamBold
     previewLabel.TextScaled = true
     previewLabel.ZIndex= 53
     previewLabel.Parent= previewFrame
@@ -804,7 +838,7 @@ end
         lbl.BackgroundTransparency= 1
         lbl.Text= label
         lbl.TextColor3= Color3.new(1, 1, 1)
-        lbl.Font= Enum.Font.FredokaOne
+        lbl.Font= Enum.Font.Gotham
         lbl.TextScaled = true
         lbl.TextXAlignment= Enum.TextXAlignment.Left
         lbl.ZIndex= 54
@@ -823,8 +857,8 @@ end
         box.Size= UDim2.new(1, 0, 1, 0)
         box.BackgroundColor3= Color3.fromRGB(30, 30, 30)
         box.TextColor3= Color3.new(1, 1, 1)
-        box.Text= Digitar
-        box.Font= Enum.Font.FredokaOne
+        box.Text= tostring(value)
+        box.Font= Enum.Font.Gotham
         box.TextScaled = true
         box.ZIndex= 55
         box.Parent= boxContainer
@@ -877,9 +911,9 @@ end
     local animLbl= Instance.new("TextLabel")
     animLbl.Size= UDim2.new(0.4, 0, 1, 0)
     animLbl.BackgroundTransparency= 1
-    animLbl.Text= "ANIMAÇÃO:"
+    animLbl.Text= "Animation:"
     animLbl.TextColor3= Color3.new(1, 1, 1)
-    animLbl.Font= Enum.Font.FredokaOne
+    animLbl.Font= Enum.Font.Gotham
     animLbl.TextScaled = true
     animLbl.TextXAlignment= Enum.TextXAlignment.Left
     animLbl.ZIndex= 54
@@ -899,7 +933,7 @@ end
     animToggle.BackgroundColor3= emote.isAnimation and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
     animToggle.Text= emote.isAnimation and "YES" or "NO"
     animToggle.TextColor3= Color3.new(1, 1, 1)
-    animToggle.Font= Enum.Font.FredokaOne
+    animToggle.Font= Enum.Font.GothamBold
     animToggle.TextScaled = true
     animToggle.ZIndex= 55
     animToggle.Parent= animToggleContainer
@@ -928,7 +962,7 @@ end
     ugcLbl.BackgroundTransparency= 1
     ugcLbl.Text= "UGC:"
     ugcLbl.TextColor3= Color3.new(1, 1, 1)
-    ugcLbl.Font= Enum.Font.FredokaOne
+    ugcLbl.Font= Enum.Font.Gotham
     ugcLbl.TextScaled = true
     ugcLbl.TextXAlignment= Enum.TextXAlignment.Left
     ugcLbl.ZIndex= 54
@@ -948,7 +982,7 @@ end
     ugcToggle.BackgroundColor3= emote.ugc and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
     ugcToggle.Text= emote.ugc and "YES" or "NO"
     ugcToggle.TextColor3= Color3.new(1, 1, 1)
-    ugcToggle.Font= Enum.Font.FredokaOne
+    ugcToggle.Font= Enum.Font.GothamBold
     ugcToggle.TextScaled = true
     ugcToggle.ZIndex= 55
     ugcToggle.Parent= ugcToggleContainer
@@ -984,9 +1018,9 @@ end
     local saveBtn= Instance.new("TextButton")
     saveBtn.Size= UDim2.new(1, 0, 1, 0)
     saveBtn.BackgroundColor3= Color3.new(0, 0.5, 0)
-    saveBtn.Text= "Alterações salvas"
+    saveBtn.Text= "SAVE CHANGES"
     saveBtn.TextColor3= Color3.new(1, 1, 1)
-    saveBtn.Font= Enum.Font.FredokaOne
+    saveBtn.Font= Enum.Font.GothamBold
     saveBtn.TextScaled = true
     saveBtn.ZIndex= 55
     saveBtn.Parent= saveBtnContainer
@@ -1018,9 +1052,9 @@ end
     local deleteBtn= Instance.new("TextButton")
     deleteBtn.Size= UDim2.new(1, 0, 1, 0)
     deleteBtn.BackgroundColor3= Color3.new(0.5, 0, 0)
-    deleteBtn.Text= "DELETAR EMOTE!"
+    deleteBtn.Text= "DELETE EMOTE"
     deleteBtn.TextColor3= Color3.new(1, 1, 1)
-    deleteBtn.Font= Enum.Font.FredokaOne
+    deleteBtn.Font= Enum.Font.GothamBold
     deleteBtn.TextScaled = true
     deleteBtn.ZIndex= 55
     deleteBtn.Parent= deleteBtnContainer
@@ -1031,8 +1065,8 @@ end
     deleteBtn.MouseButton1Click:Connect(function()
         createConfirmation(
             "DELETE EMOTE",
-            "QUER EXCLUIR ESSE EMOTE?",
-            "ISTO NÃO PODE SER DESFEITO!",
+            "ARE YOU SURE YOU WANT TO PERMANENTLY DELETE THIS EMOTE?",
+            "THIS CANNOT BE UNDONE!",
             function()
                 
                 for i, e in ipairs(emotes) do
@@ -1363,8 +1397,8 @@ currentLoopId = currentLoopId + 1
             local favButton= Instance.new("TextButton")
             favButton.Name= "FavButton"
             favButton.Size= UDim2.new(1, 0, 1, 0)
-            favButton.Font= Enum.Font.FredokaOne
-            favButton.Text= "OLOKO KKKKKK"
+            favButton.Font= Enum.Font.GothamBold
+            favButton.Text= "Silly!"
             favButton.TextScaled= true
             favButton.Parent= favBtnContainer
             
@@ -1388,7 +1422,7 @@ currentLoopId = currentLoopId + 1
             editButton.BackgroundColor3= Color3.fromRGB(80, 80, 80)
             editButton.Text= "Emotes"
             editButton.TextColor3= Color3.new(0.8, 0.8, 1)
-            editButton.Font= Enum.Font.FredokaOne
+            editButton.Font= Enum.Font.GothamBold
             editButton.TextScaled = true
             editButton.Parent= editBtnContainer
             
@@ -1420,9 +1454,9 @@ currentLoopId = currentLoopId + 1
             animIndicator.Size= UDim2.new(1, 0, 0, scale("Y", 15))
             animIndicator.Position= UDim2.new(0, 0, 0, scale("Y", 70))
             animIndicator.BackgroundTransparency= 1
-            animIndicator.Text= "ANIMATICÃO"
+            animIndicator.Text= "ANIMATION"
             animIndicator.TextColor3= Color3.new(0.5, 1, 0.5)
-            animIndicator.Font= Enum.Font.FredokaOne
+            animIndicator.Font= Enum.Font.GothamBold
             animIndicator.TextScaled = true
             animIndicator.Visible= false
             animIndicator.Parent= container
@@ -1433,9 +1467,9 @@ currentLoopId = currentLoopId + 1
             lbl.Position= UDim2.new(0, scale("X", 2), 0, scale("Y", 110))
             lbl.BackgroundTransparency= 1
             lbl.TextColor3= Color3.new(1, 1, 1)
-            lbl.Text = "EMOTES KAIOX HUB"
+            lbl.Text = ":3"
             lbl.TextScaled = true
-            lbl.Font= Enum.Font.FredokaOne
+            lbl.Font= Enum.Font.GothamBold
             lbl.TextWrapped= true
             lbl.Parent= container
             elements.lbl= lbl
@@ -1445,7 +1479,7 @@ currentLoopId = currentLoopId + 1
             dateLbl.Position= UDim2.new(0, scale("X", 2), 1, -scale("Y", 5))
             dateLbl.BackgroundTransparency= 1
             dateLbl.TextColor3= Color3.new(0.7, 0.7, 0.7)
-            dateLbl.Font= Enum.Font.FredokaOne
+            dateLbl.Font= Enum.Font.Gotham
             dateLbl.TextScaled = true
             dateLbl.Parent= container
             elements.dateLbl= dateLbl
@@ -1462,9 +1496,9 @@ currentLoopId = currentLoopId + 1
             playButton.Name= "PlayButton"
             playButton.Size= UDim2.new(1, 0, 1, 0)
             playButton.BackgroundColor3= Color3.fromRGB(60, 180, 60)
-            playButton.Text= "COMEÇAR"
+            playButton.Text= "PLAY"
             playButton.TextColor3= Color3.new(1, 1, 1)
-            playButton.Font= Enum.Font.FredokaOne
+            playButton.Font= Enum.Font.GothamBold
             playButton.TextScaled = true
             playButton.AutoButtonColor= false
             playButton.Parent= playBtnContainer
@@ -1597,4 +1631,4 @@ end)
 
 
 refresh()
-DoNotif(":3 Emotes","eae bão?", 10)
+DoNotif(":3 Emotes","Loaded I Think?", 10)
