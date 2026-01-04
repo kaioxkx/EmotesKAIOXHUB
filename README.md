@@ -77,7 +77,7 @@ local StarterGui = game:GetService("StarterGui")
 
 repeat
 local success, result = pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox/refs/heads/main/README.md"))()))
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox2/refs/heads/main/README.md"))()
 	end)
 
 	if success then
