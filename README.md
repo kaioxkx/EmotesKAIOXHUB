@@ -548,7 +548,8 @@ local function createConfirmation(title, message, beg, callback)
     
     AllAround(yesButton, 8)
     createGradient(yesButton, Color3.fromRGB(200, 70, 70), Color3.fromRGB(160, 50, 50))
-    
+
+	
     
     noButton.MouseButton1Click:Connect(function()
         confirmationFrame:Destroy()
