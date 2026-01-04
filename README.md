@@ -237,7 +237,7 @@ if UserInputService.TouchEnabled then
 
     local Button = Instance.new("TextButton")
     Button.Parent = HideGui
-    Button.Size = UDim2.new(0,60,0,60)
+    Button.Size = UDim2.new(0,65,0,65)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
     Button.Text = "EMOTES\nKAIOX HUB"
@@ -245,17 +245,12 @@ if UserInputService.TouchEnabled then
     Button.TextColor3 = Color3.new(1,1,1)
     Button.Font = Enum.Font.FredokaOne
     Button.BackgroundColor3 = Color3.new(0,0,0)
-    Button.BackgroundTransparency = 0.2
+    Button.BackgroundTransparency = 0.5
     Button.Draggable = true
     Button.Active = true
 
     local UICorner = Instance.new("UICorner", Button)
     UICorner.CornerRadius = UDim.new(1,0)
-
-    local tweenInfo = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-    local squish = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,75,0,50)})
-    local normal = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,60,0,60)})
-    local pressed = TweenService:Create(Button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0,55,0,55)})
 
     Button.MouseButton1Down:Connect(function() pressed:Play() end)
     Button.MouseButton1Up:Connect(function() normal:Play() end)
