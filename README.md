@@ -102,36 +102,7 @@ end
 
 
 local LineStuff = {
-    "applied duct tape..",
-    "99 new bugs shipped!",
-    "lag optimized (™ placebo)",
-    "patch v0.0.0.1.1.1b",
-    "free bugs DLC",
-    "oops all errors",
-    "syntax% any% WR attempt",
-    "fixed nothing, broke everything",
-    "hotfix for the hotfix of the hotfix",
-    "added new ways to crash",
-    "commit message: 'final_final_REALfix'",
-    "lag machine now 20% faster",
-    "deleted prod on accident..",
-    "balance patch (everything worse)",
-    "code works on my PC™",
-    "early access to more bugs",
-    "new feature: random crashes",
-    "speedrun to blue screen",
-    "patch notes redacted ",
-    "implemented spaghetti mode ",
-    "downgrade disguised as upgrade",
-    "half a fix, twice the issues",
-    "added bug multiplier",
-    "AI wrote this update, blame it",
-    "release notes missing",
-    "debug mode left on (oops)",
-    "typo patch (added new typo)",
-    "rollback simulator v2",
-    "minor fixes, major disasters",
-    "randomized everything for fun",
+
 }
 
 local function GazePain()
@@ -139,11 +110,11 @@ local function GazePain()
 end
 
 task.delay(10, function()
-    DoNotif("","OPA BÃO?👍", 5)
+    DoNotif("Mensagem:","OPA BÃO?👍", 5)
 end)
 
 task.delay(12, function()
-    DoNotif(":3 Emotes", GazePain(), 10)
+    DoNotif("Mensagem:", GazePain(), 10)
 end)
 
 
