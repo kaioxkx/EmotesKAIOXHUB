@@ -1,4 +1,4 @@
--- KILL ME KILL ME ARLEADY AHHGHRHRHEHEHEH- GAZE.EXE HERE 
+-- por KAIOX 
 if getgenv().EmotesGay == true then
 return end
 getgenv().EmotesGay = true
@@ -101,12 +101,41 @@ SoundPlay.CustomId = "rbxassetid://6655708496"
 end
 
 
- 
+ SoundPlay.CustomId = "rbxassetid://2084290015"
  DoNotif("Origin V 5.16","RandomEmote BugFix", 10)
 
 
 local LineStuff = {
-    
+    "applied duct tape..",
+    "99 new bugs shipped!",
+    "lag optimized (™ placebo)",
+    "patch v0.0.0.1.1.1b",
+    "free bugs DLC",
+    "oops all errors",
+    "syntax% any% WR attempt",
+    "fixed nothing, broke everything",
+    "hotfix for the hotfix of the hotfix",
+    "added new ways to crash",
+    "commit message: 'final_final_REALfix'",
+    "lag machine now 20% faster",
+    "deleted prod on accident..",
+    "balance patch (everything worse)",
+    "code works on my PC™",
+    "early access to more bugs",
+    "new feature: random crashes",
+    "speedrun to blue screen",
+    "patch notes redacted ",
+    "implemented spaghetti mode ",
+    "downgrade disguised as upgrade",
+    "half a fix, twice the issues",
+    "added bug multiplier",
+    "AI wrote this update, blame it",
+    "release notes missing",
+    "debug mode left on (oops)",
+    "typo patch (added new typo)",
+    "rollback simulator v2",
+    "minor fixes, major disasters",
+    "randomized everything for fun",
 }
 
 local function GazePain()
@@ -256,7 +285,11 @@ if UserInputService.TouchEnabled then
     local UICorner = Instance.new("UICorner", Button)
     UICorner.CornerRadius = UDim.new(1,0)
 
-    
+    local tweenInfo = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+    local squish = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,75,0,50)})
+    local normal = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,60,0,60)})
+    local pressed = TweenService:Create(Button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0,55,0,55)})
+
     Button.MouseButton1Down:Connect(function() pressed:Play() end)
     Button.MouseButton1Up:Connect(function() normal:Play() end)
 
@@ -267,7 +300,7 @@ if UserInputService.TouchEnabled then
 
         main.Visible = not main.Visible
         gui.Enabled = not gui.Enabled
-    
+        SoundPlay.CustomId = "rbxassetid://97221552913350"
 
         if main.Visible == true then
             main.Position = UDim2.new(0.5, 0, 0.5, 0)
