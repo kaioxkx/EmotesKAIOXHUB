@@ -240,7 +240,7 @@ if UserInputService.TouchEnabled then
     Button.Size = UDim2.new(0,60,0,60)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
-    Button.Text = "EMOTES"
+    Button.Text = "EMOTES\nKAIOX HUB"
     Button.TextScaled = true
     Button.TextColor3 = Color3.new(1,1,1)
     Button.Font = Enum.Font.FredokaOne
@@ -265,9 +265,6 @@ if UserInputService.TouchEnabled then
         squish.Completed:Wait()
         normal:Play()
 
-        main.Visible = not main.Visible
-        gui.Enabled = not gui.Enabled
-        SoundPlay.CustomId = "rbxassetid://97221552913350"
 
         if main.Visible == true then
             main.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -286,7 +283,7 @@ AllAround(topBar, 12)
  title= Instance.new("TextLabel")
 title.Size= UDim2.new(0, scale("X", 80), 0, scale("Y", 45))
 title.BackgroundTransparency= 1
-title.Text= ":3 Emotes"
+title.Text= "EMOTES KAIOX HUB 🗯️"
 title.TextColor3= Color3.new(1, 1, 1)
 title.Font= Enum.Font.SourceSansBold
 title.TextScaled= true
@@ -327,7 +324,7 @@ minButton.Position= UDim2.new(1, -scale("X", 95), 0.5, -scale("Y", 17.5))
 minButton.BackgroundTransparency= 1
 minButton.TextColor3= Color3.new(1, 1, 1)
 minButton.Text= "-"
-minButton.Font= Enum.Font.GothamBold
+minButton.Font= Enum.Font.FredokaOne
 minButton.TextScaled= true
 minButton.ZIndex= 3
 minButton.Parent= topBar
@@ -339,7 +336,7 @@ closeButton.Position= UDim2.new(1, -scale("X", 65), 0.5, -scale("Y", 17.5))
 closeButton.BackgroundTransparency= 1
 closeButton.TextColor3= Color3.new(1, 1, 1)
 closeButton.Text= "×"
-closeButton.Font= Enum.Font.GothamBold
+closeButton.Font= Enum.Font.FredokaOne
 closeButton.TextScaled= true
 closeButton.ZIndex= 3
 closeButton.Parent= topBar
@@ -390,7 +387,7 @@ createGradient(filterFrame, Color3.fromRGB(50, 50, 50), Color3.fromRGB(40, 40, 4
     b.Size= UDim2.new(1, 0, 1, 0)
     b.BackgroundColor3= Color3.fromRGB(70, 70, 70)
     b.TextColor3= Color3.new(1, 1, 1)
-    b.Font= Enum.Font.GothamBold
+    b.Font= Enum.Font.FredokaOne
     b.TextScaled= true
     b.Text= txt
     b.AutoButtonColor= false
@@ -486,7 +483,7 @@ local function createConfirmation(title, message, beg, callback)
     titleLbl.BackgroundColor3= Color3.fromRGB(70, 70, 70)
     titleLbl.Text= title
     titleLbl.TextColor3= Color3.new(1, 1, 1)
-    titleLbl.Font= Enum.Font.GothamBold
+    titleLbl.Font= Enum.Font.FredokaOne
     titleLbl.TextScaled= true
     titleLbl.ZIndex= 103
     titleLbl.Parent= dialog
@@ -500,7 +497,7 @@ local function createConfirmation(title, message, beg, callback)
     messageLbl.Text= message
     messageLbl.TextColor3= Color3.new(1, 1, 1)
     messageLbl.TextWrapped= true
-    messageLbl.Font= Enum.Font.Gotham
+    messageLbl.Font= Enum.Font.FredokaOne
     messageLbl.TextScaled= true
     messageLbl.ZIndex= 103
     messageLbl.Parent= dialog
@@ -512,7 +509,7 @@ local function createConfirmation(title, message, beg, callback)
     begLbl.Text= beg
     begLbl.TextColor3= Color3.new(1, 0.3, 0.3)
     begLbl.TextWrapped= true
-    begLbl.Font= Enum.Font.GothamBlack
+    begLbl.Font= Enum.Font.FredokaOne
     begLbl.TextScaled= true
     begLbl.ZIndex= 103
     begLbl.Parent= dialog
@@ -529,8 +526,8 @@ local function createConfirmation(title, message, beg, callback)
     noButton.Position= UDim2.new(0, 0, 0, 0)
     noButton.BackgroundColor3= Color3.fromRGB(80, 80, 80)
     noButton.TextColor3= Color3.new(1, 1, 1)
-    noButton.Text= "NO"
-    noButton.Font= Enum.Font.GothamBold
+    noButton.Text= "NÃO"
+    noButton.Font= Enum.Font.FredokaOne
     noButton.TextScaled = true
     noButton.ZIndex= 104
     noButton.Parent= buttonContainer
@@ -543,8 +540,8 @@ local function createConfirmation(title, message, beg, callback)
     yesButton.Position= UDim2.new(0.55, 0, 0, 0)
     yesButton.BackgroundColor3= Color3.fromRGB(180, 60, 60)
     yesButton.TextColor3= Color3.new(1, 1, 1)
-    yesButton.Text= "YES"
-    yesButton.Font= Enum.Font.GothamBold
+    yesButton.Text= "SIM"
+    yesButton.Font= Enum.Font.FredokaOne
     yesButton.TextScaled= true
     yesButton.ZIndex= 104
     yesButton.Parent= buttonContainer
