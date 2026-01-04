@@ -886,7 +886,7 @@ end
     local animToggle= Instance.new("TextButton")
     animToggle.Size= UDim2.new(1, 0, 1, 0)
     animToggle.BackgroundColor3= emote.isAnimation and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
-    animToggle.Text= emote.isAnimation and "SIM" or "NÃO"
+    animToggle.Text= emote.isAnimation and "YES" or "NO"
     animToggle.TextColor3= Color3.new(1, 1, 1)
     animToggle.Font= Enum.Font.GothamBold
     animToggle.TextScaled = true
@@ -897,7 +897,7 @@ end
     
     animToggle.MouseButton1Click:Connect(function()
         emote.isAnimation= not emote.isAnimation
-        animToggle.Text= emote.isAnimation and "SIM" or "NÃO"
+        animToggle.Text= emote.isAnimation and "YES" or "NO"
         animToggle.BackgroundColor3= emote.isAnimation and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
     end)
     
@@ -935,7 +935,7 @@ end
     local ugcToggle= Instance.new("TextButton")
     ugcToggle.Size= UDim2.new(1, 0, 1, 0)
     ugcToggle.BackgroundColor3= emote.ugc and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
-    ugcToggle.Text= emote.ugc and "SIM" or "NÃO"
+    ugcToggle.Text= emote.ugc and "YES" or "NO"
     ugcToggle.TextColor3= Color3.new(1, 1, 1)
     ugcToggle.Font= Enum.Font.FredokaOne
     ugcToggle.TextScaled = true
@@ -946,7 +946,7 @@ end
     
     ugcToggle.MouseButton1Click:Connect(function()
         emote.ugc= not emote.ugc
-        ugcToggle.Text= emote.ugc and "SIM" or "NÃO"
+        ugcToggle.Text= emote.ugc and "YES" or "NO"
         ugcToggle.BackgroundColor3= emote.ugc and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
     end)
     
