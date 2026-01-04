@@ -95,8 +95,8 @@ function DoNotif(title, text, duration)
 SoundPlay.CustomId = "rbxassetid://6655708496"
 	Notify({
 		Title = title or adminName or nil,
-		Description = text or "something",
-		Duration = duration or 5
+		Description = text or "mensagem...",
+		Duration = duration or 3
 	})
 end
 
@@ -139,7 +139,7 @@ local function GazePain()
 end
 
 task.delay(10, function()
-    DoNotif(":3 Emotes","Another day..", 5)
+    DoNotif("","OPA BÃO?👍", 5)
 end)
 
 task.delay(12, function()
