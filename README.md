@@ -1,4 +1,4 @@
--- KILL ME KILL ME ARLEADY AHHGHRHRHEHEHEH- GAZE.EXE HERE 
+-- POR KAIOX 
 if getgenv().EmotesGay == true then
 return end
 getgenv().EmotesGay = true
@@ -96,16 +96,16 @@ SoundPlay.CustomId = "rbxassetid://6655708496"
 	Notify({
 		Title = title or adminName or nil,
 		Description = text or "something",
-		Duration = duration or 3
+		Duration = duration or 5
 	})
 end
-
 
 
  DoNotif("Origin V 5.16","RandomEmote BugFix", 10)
 
 
 local LineStuff = {
+    
 }
 
 local function GazePain()
@@ -113,11 +113,11 @@ local function GazePain()
 end
 
 task.delay(10, function()
-    DoNotif("MENSAGEM:","OPAAA BÃO?!🤠👍", 5)
+    DoNotif(":3 Emotes","Another day..", 5)
 end)
 
 task.delay(12, function()
-    DoNotif("MENSAGEM:", GazePain(), 10)
+    DoNotif(":3 Emotes", GazePain(), 10)
 end)
 
 
@@ -240,13 +240,13 @@ if UserInputService.TouchEnabled then
 
     local Button = Instance.new("TextButton")
     Button.Parent = HideGui
-    Button.Size = UDim2.new(0,50,0,50)
+    Button.Size = UDim2.new(0,60,0,60)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
-    Button.Text = "EMOTES\nKAIOX HUB🗯️"
+    Button.Text = "EMOTES\nKAIOX HUH🗯️"
     Button.TextScaled = true
     Button.TextColor3 = Color3.new(1,1,1)
-    Button.Font = Enum.Font.FredokaOne
+    Button.Font = Enum.Font.SourceSansBold
     Button.BackgroundColor3 = Color3.new(0,0,0)
     Button.BackgroundTransparency = 0.5
     Button.Draggable = true
@@ -255,7 +255,10 @@ if UserInputService.TouchEnabled then
     local UICorner = Instance.new("UICorner", Button)
     UICorner.CornerRadius = UDim.new(1,0)
 
-    
+    local tweenInfo = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+    local squish = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,75,0,50)})
+    local normal = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,60,0,60)})
+    local pressed = TweenService:Create(Button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0,55,0,55)})
 
     Button.MouseButton1Down:Connect(function() pressed:Play() end)
     Button.MouseButton1Up:Connect(function() normal:Play() end)
@@ -267,7 +270,6 @@ if UserInputService.TouchEnabled then
 
         main.Visible = not main.Visible
         gui.Enabled = not gui.Enabled
-		
 
         if main.Visible == true then
             main.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -286,9 +288,9 @@ AllAround(topBar, 12)
  title= Instance.new("TextLabel")
 title.Size= UDim2.new(0, scale("X", 80), 0, scale("Y", 45))
 title.BackgroundTransparency= 1
-title.Text= "EMOTES KAIOX HUB 🗯️"
+title.Text= ":3 Emotes"
 title.TextColor3= Color3.new(1, 1, 1)
-title.Font= Enum.Font.FredokaOne
+title.Font= Enum.Font.SourceSansBold
 title.TextScaled= true
 title.TextXAlignment= Enum.TextXAlignment.Left
 title.Position= UDim2.new(0, 5, 0, 0)
@@ -298,9 +300,9 @@ gazeLabel = Instance.new("TextLabel")
 gazeLabel.Size = UDim2.new(0, scale("X", 70), 0, scale("Y", 28))
 gazeLabel.Position = UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 gazeLabel.BackgroundTransparency = 1
-gazeLabel.Text = "por kaiox"
+gazeLabel.Text = "By Gaze_"
 gazeLabel.TextColor3 = Color3.new(1, 1, 1)
-gazeLabel.Font = Enum.Font.FredokaOne
+gazeLabel.Font = Enum.Font.Gotham
 gazeLabel.TextScaled = true
 gazeLabel.TextXAlignment = Enum.TextXAlignment.Right
 gazeLabel.Parent = topBar
@@ -310,9 +312,9 @@ searchBox.Size= UDim2.new(0, scale("X", 200), 0, scale("Y", 28))
 searchBox.Position= UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 searchBox.BackgroundColor3= Color3.fromRGB(30, 30, 30)
 searchBox.TextColor3= Color3.new(1, 1, 1)
-searchBox.PlaceholderText= "PESQUISAR..."
+searchBox.PlaceholderText= "Search emotes..."
 searchBox.PlaceholderColor3= Color3.new(0.7, 0.7, 0.7)
-searchBox.Font= Enum.Font.FredokaOne
+searchBox.Font= Enum.Font.Gotham
 searchBox.TextScaled= true
 searchBox.Text= ""
 searchBox.ClearTextOnFocus= false
@@ -327,7 +329,7 @@ minButton.Position= UDim2.new(1, -scale("X", 95), 0.5, -scale("Y", 17.5))
 minButton.BackgroundTransparency= 1
 minButton.TextColor3= Color3.new(1, 1, 1)
 minButton.Text= "-"
-minButton.Font= Enum.Font.FredokaOne
+minButton.Font= Enum.Font.GothamBold
 minButton.TextScaled= true
 minButton.ZIndex= 3
 minButton.Parent= topBar
