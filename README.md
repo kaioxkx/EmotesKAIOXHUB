@@ -555,7 +555,7 @@ local function createConfirmation(title, message, beg, callback)
         confirmationFrame:Destroy()
     end)
     local ClickCount = 0
-local maxClicks = 1
+local maxClicks = 3
 local startColor = yesButton.BackgroundColor3 -- initial color
 local endColor = Color3.fromRGB(255, 0, 0)   -- full red
 
@@ -566,7 +566,7 @@ local endColor = Color3.fromRGB(255, 0, 0)   -- full red
     local t = ClickCount / maxClicks
     yesButton.BackgroundColor3 = startColor:Lerp(endColor, t)
     
-    yesButton.Text = "Yes (" .. ClickCount .. "/1)"
+    yesButton.Text = "Yes (" .. ClickCount .. "/3)"
     
     if ClickCount >= maxClicks then
         confirmationFrame:Destroy()
