@@ -1,4 +1,4 @@
--- POR KAIOX 
+-- KILL ME KILL ME ARLEADY AHHGHRHRHEHEHEH- GAZE.EXE HERE 
 if getgenv().EmotesGay == true then
 return end
 getgenv().EmotesGay = true
@@ -77,7 +77,7 @@ local StarterGui = game:GetService("StarterGui")
 
 repeat
 local success, result = pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox/refs/heads/main/README.md"))())
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox/refs/heads/main/README.md"))()))
 	end)
 
 	if success then
@@ -101,6 +101,7 @@ SoundPlay.CustomId = "rbxassetid://6655708496"
 end
 
 
+ 
  DoNotif("Origin V 5.16","RandomEmote BugFix", 10)
 
 
@@ -243,22 +244,19 @@ if UserInputService.TouchEnabled then
     Button.Size = UDim2.new(0,60,0,60)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
-    Button.Text = "EMOTES\nKAIOX HUH🗯️"
+    Button.Text = ":3"
     Button.TextScaled = true
     Button.TextColor3 = Color3.new(1,1,1)
     Button.Font = Enum.Font.SourceSansBold
     Button.BackgroundColor3 = Color3.new(0,0,0)
-    Button.BackgroundTransparency = 0.5
+    Button.BackgroundTransparency = 0.2
     Button.Draggable = true
     Button.Active = true
 
     local UICorner = Instance.new("UICorner", Button)
     UICorner.CornerRadius = UDim.new(1,0)
 
-    local tweenInfo = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-    local squish = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,75,0,50)})
-    local normal = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,60,0,60)})
-    local pressed = TweenService:Create(Button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0,55,0,55)})
+    
 
     Button.MouseButton1Down:Connect(function() pressed:Play() end)
     Button.MouseButton1Up:Connect(function() normal:Play() end)
@@ -270,6 +268,7 @@ if UserInputService.TouchEnabled then
 
         main.Visible = not main.Visible
         gui.Enabled = not gui.Enabled
+        
 
         if main.Visible == true then
             main.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -564,6 +563,7 @@ local startColor = yesButton.BackgroundColor3 -- initial color
 local endColor = Color3.fromRGB(255, 0, 0)   -- full red
 
 yesButton.MouseButton1Click:Connect(function()
+
     
     ClickCount = ClickCount + 1
     
