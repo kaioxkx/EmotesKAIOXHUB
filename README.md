@@ -96,7 +96,7 @@ SoundPlay.CustomId = "rbxassetid://6655708496"
 	Notify({
 		Title = title or adminName or nil,
 		Description = text or "something",
-		Duration = duration or 5
+		Duration = duration or 3 
 	})
 end
 
@@ -143,7 +143,7 @@ local function GazePain()
 end
 
 task.delay(10, function()
-    DoNotif(":3 Emotes","Another day..", 5)
+    DoNotif(":3 Emotes","OPA BÃO?🤠👍", 5)
 end)
 
 task.delay(12, function()
@@ -273,10 +273,10 @@ if UserInputService.TouchEnabled then
     Button.Size = UDim2.new(0,60,0,60)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
-    Button.Text = ":3"
+    Button.Text = "EMOTES"
     Button.TextScaled = true
     Button.TextColor3 = Color3.new(1,1,1)
-    Button.Font = Enum.Font.SourceSansBold
+    Button.Font = Enum.Font.FredokaOne
     Button.BackgroundColor3 = Color3.new(0,0,0)
     Button.BackgroundTransparency = 0.2
     Button.Draggable = true
@@ -331,9 +331,9 @@ gazeLabel = Instance.new("TextLabel")
 gazeLabel.Size = UDim2.new(0, scale("X", 70), 0, scale("Y", 28))
 gazeLabel.Position = UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 gazeLabel.BackgroundTransparency = 1
-gazeLabel.Text = "By Gaze_"
+gazeLabel.Text = "POR KAIOX"
 gazeLabel.TextColor3 = Color3.new(1, 1, 1)
-gazeLabel.Font = Enum.Font.Gotham
+gazeLabel.Font = Enum.Font.FredokaOne
 gazeLabel.TextScaled = true
 gazeLabel.TextXAlignment = Enum.TextXAlignment.Right
 gazeLabel.Parent = topBar
@@ -343,9 +343,9 @@ searchBox.Size= UDim2.new(0, scale("X", 200), 0, scale("Y", 28))
 searchBox.Position= UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 searchBox.BackgroundColor3= Color3.fromRGB(30, 30, 30)
 searchBox.TextColor3= Color3.new(1, 1, 1)
-searchBox.PlaceholderText= "Search emotes..."
+searchBox.PlaceholderText= "PESQUISAR"
 searchBox.PlaceholderColor3= Color3.new(0.7, 0.7, 0.7)
-searchBox.Font= Enum.Font.Gotham
+searchBox.Font= Enum.Font.FredokaOne
 searchBox.TextScaled= true
 searchBox.Text= ""
 searchBox.ClearTextOnFocus= false
@@ -360,7 +360,7 @@ minButton.Position= UDim2.new(1, -scale("X", 95), 0.5, -scale("Y", 17.5))
 minButton.BackgroundTransparency= 1
 minButton.TextColor3= Color3.new(1, 1, 1)
 minButton.Text= "-"
-minButton.Font= Enum.Font.GothamBold
+minButton.Font= Enum.Font.FredokaOne
 minButton.TextScaled= true
 minButton.ZIndex= 3
 minButton.Parent= topBar
@@ -372,7 +372,7 @@ closeButton.Position= UDim2.new(1, -scale("X", 65), 0.5, -scale("Y", 17.5))
 closeButton.BackgroundTransparency= 1
 closeButton.TextColor3= Color3.new(1, 1, 1)
 closeButton.Text= "×"
-closeButton.Font= Enum.Font.GothamBold
+closeButton.Font= Enum.Font.FredokaOne
 closeButton.TextScaled= true
 closeButton.ZIndex= 3
 closeButton.Parent= topBar
@@ -423,7 +423,7 @@ createGradient(filterFrame, Color3.fromRGB(50, 50, 50), Color3.fromRGB(40, 40, 4
     b.Size= UDim2.new(1, 0, 1, 0)
     b.BackgroundColor3= Color3.fromRGB(70, 70, 70)
     b.TextColor3= Color3.new(1, 1, 1)
-    b.Font= Enum.Font.GothamBold
+    b.Font= Enum.Font.FredokaOne
     b.TextScaled= true
     b.Text= txt
     b.AutoButtonColor= false
@@ -517,9 +517,9 @@ local function createConfirmation(title, message, beg, callback)
     local titleLbl= Instance.new("TextLabel")
     titleLbl.Size= UDim2.new(1, 0, 0, scale("Y", 40))
     titleLbl.BackgroundColor3= Color3.fromRGB(70, 70, 70)
-    titleLbl.Text= title
+    titleLbl.Text= TÍTULO 
     titleLbl.TextColor3= Color3.new(1, 1, 1)
-    titleLbl.Font= Enum.Font.GothamBold
+    titleLbl.Font= Enum.Font.FredokaOne
     titleLbl.TextScaled= true
     titleLbl.ZIndex= 103
     titleLbl.Parent= dialog
@@ -530,10 +530,10 @@ local function createConfirmation(title, message, beg, callback)
     messageLbl.Size= UDim2.new(1, -scale("X", 20), 0, scale("Y", 50))
     messageLbl.Position= UDim2.new(0, scale("X", 10), 0, scale("Y", 45))
     messageLbl.BackgroundTransparency= 1
-    messageLbl.Text= message
+    messageLbl.Text= MENSAGEM...
     messageLbl.TextColor3= Color3.new(1, 1, 1)
     messageLbl.TextWrapped= true
-    messageLbl.Font= Enum.Font.Gotham
+    messageLbl.Font= Enum.Font.FredokaOne
     messageLbl.TextScaled= true
     messageLbl.ZIndex= 103
     messageLbl.Parent= dialog
@@ -542,7 +542,7 @@ local function createConfirmation(title, message, beg, callback)
     begLbl.Size= UDim2.new(1, -scale("X", 20), 0, scale("Y", 30))
     begLbl.Position= UDim2.new(0, scale("X", 10), 0, scale("Y", 95))
     begLbl.BackgroundTransparency= 1
-    begLbl.Text= beg
+    begLbl.Text= FECHAR
     begLbl.TextColor3= Color3.new(1, 0.3, 0.3)
     begLbl.TextWrapped= true
     begLbl.Font= Enum.Font.GothamBlack
