@@ -1,4 +1,4 @@
--- POR KAIOX 🗯️
+-- POR KAIOX 
 if getgenv().EmotesGay == true then
 return end
 getgenv().EmotesGay = true
@@ -77,7 +77,7 @@ local StarterGui = game:GetService("StarterGui")
 
 repeat
 local success, result = pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox/refs/heads/main/README.md"))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox2/refs/heads/main/README.md"))()
 	end)
 
 	if success then
@@ -111,7 +111,7 @@ local function GazePain()
 end
 
 task.delay(10, function()
-    DoNotif("MENSAGEM:","OPA BÃO?!🤠👍", 5)
+    DoNotif(":3 Emotes","Another day..", 5)
 end)
 
 task.delay(12, function()
@@ -126,7 +126,7 @@ end)
  TweenService= Services.TweenService
  
 EMOTES_FILE= "emotes.json"
-defaultEmotes= loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox2/refs/heads/main/README.md"))()
+defaultEmotes= loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox/refs/heads/main/README.md"))()
 local Screen= setmetatable({}, {
 __index= function(_, key)
 local cam= workspace.CurrentCamera
@@ -241,12 +241,12 @@ if UserInputService.TouchEnabled then
     Button.Size = UDim2.new(0,75,0,75)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
-    Button.Text = "EMOTE\nKAIOX HUB🗯️"
+    Button.Text = "EMOTS\nKAIOX HUB🗯️"
     Button.TextScaled = true
     Button.TextColor3 = Color3.new(1,1,1)
-    Button.Font = Enum.Font.FredokaOne
+    Button.Font = Enum.Font.SourceSansBold
     Button.BackgroundColor3 = Color3.new(0,0,0)
-    Button.BackgroundTransparency = 0.5
+    Button.BackgroundTransparency = 0.2
     Button.Draggable = true
     Button.Active = true
 
@@ -283,9 +283,9 @@ AllAround(topBar, 12)
  title= Instance.new("TextLabel")
 title.Size= UDim2.new(0, scale("X", 80), 0, scale("Y", 45))
 title.BackgroundTransparency= 1
-title.Text= "EMOTES KAIOX HUB 🗯️"
+title.Text= ":3 Emotes"
 title.TextColor3= Color3.new(1, 1, 1)
-title.Font= Enum.Font.FredokaOne
+title.Font= Enum.Font.SourceSansBold
 title.TextScaled= true
 title.TextXAlignment= Enum.TextXAlignment.Left
 title.Position= UDim2.new(0, 5, 0, 0)
@@ -295,9 +295,9 @@ gazeLabel = Instance.new("TextLabel")
 gazeLabel.Size = UDim2.new(0, scale("X", 70), 0, scale("Y", 28))
 gazeLabel.Position = UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 gazeLabel.BackgroundTransparency = 1
-gazeLabel.Text = "POR KAIOX"
+gazeLabel.Text = "By Gaze_"
 gazeLabel.TextColor3 = Color3.new(1, 1, 1)
-gazeLabel.Font = Enum.Font.FredokaOne
+gazeLabel.Font = Enum.Font.Gotham
 gazeLabel.TextScaled = true
 gazeLabel.TextXAlignment = Enum.TextXAlignment.Right
 gazeLabel.Parent = topBar
@@ -307,9 +307,9 @@ searchBox.Size= UDim2.new(0, scale("X", 200), 0, scale("Y", 28))
 searchBox.Position= UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 searchBox.BackgroundColor3= Color3.fromRGB(30, 30, 30)
 searchBox.TextColor3= Color3.new(1, 1, 1)
-searchBox.PlaceholderText= "PESQUISR EMOTES..."
+searchBox.PlaceholderText= "Search emotes..."
 searchBox.PlaceholderColor3= Color3.new(0.7, 0.7, 0.7)
-searchBox.Font= Enum.Font.FredokaOne
+searchBox.Font= Enum.Font.Gotham
 searchBox.TextScaled= true
 searchBox.Text= ""
 searchBox.ClearTextOnFocus= false
@@ -324,7 +324,7 @@ minButton.Position= UDim2.new(1, -scale("X", 95), 0.5, -scale("Y", 17.5))
 minButton.BackgroundTransparency= 1
 minButton.TextColor3= Color3.new(1, 1, 1)
 minButton.Text= "-"
-minButton.Font= Enum.Font.FredokaOne
+minButton.Font= Enum.Font.GothamBold
 minButton.TextScaled= true
 minButton.ZIndex= 3
 minButton.Parent= topBar
@@ -336,7 +336,7 @@ closeButton.Position= UDim2.new(1, -scale("X", 65), 0.5, -scale("Y", 17.5))
 closeButton.BackgroundTransparency= 1
 closeButton.TextColor3= Color3.new(1, 1, 1)
 closeButton.Text= "×"
-closeButton.Font= Enum.Font.FredokaOne
+closeButton.Font= Enum.Font.GothamBold
 closeButton.TextScaled= true
 closeButton.ZIndex= 3
 closeButton.Parent= topBar
@@ -387,7 +387,7 @@ createGradient(filterFrame, Color3.fromRGB(50, 50, 50), Color3.fromRGB(40, 40, 4
     b.Size= UDim2.new(1, 0, 1, 0)
     b.BackgroundColor3= Color3.fromRGB(70, 70, 70)
     b.TextColor3= Color3.new(1, 1, 1)
-    b.Font= Enum.Font.FredokaOne
+    b.Font= Enum.Font.GothamBold
     b.TextScaled= true
     b.Text= txt
     b.AutoButtonColor= false
@@ -483,7 +483,7 @@ local function createConfirmation(title, message, beg, callback)
     titleLbl.BackgroundColor3= Color3.fromRGB(70, 70, 70)
     titleLbl.Text= title
     titleLbl.TextColor3= Color3.new(1, 1, 1)
-    titleLbl.Font= Enum.Font.FredokaOne
+    titleLbl.Font= Enum.Font.GothamBold
     titleLbl.TextScaled= true
     titleLbl.ZIndex= 103
     titleLbl.Parent= dialog
@@ -497,7 +497,7 @@ local function createConfirmation(title, message, beg, callback)
     messageLbl.Text= message
     messageLbl.TextColor3= Color3.new(1, 1, 1)
     messageLbl.TextWrapped= true
-    messageLbl.Font= Enum.Font.FredokaOne
+    messageLbl.Font= Enum.Font.Gotham
     messageLbl.TextScaled= true
     messageLbl.ZIndex= 103
     messageLbl.Parent= dialog
@@ -509,7 +509,7 @@ local function createConfirmation(title, message, beg, callback)
     begLbl.Text= beg
     begLbl.TextColor3= Color3.new(1, 0.3, 0.3)
     begLbl.TextWrapped= true
-    begLbl.Font= Enum.Font.FredokaOne
+    begLbl.Font= Enum.Font.GothamBlack
     begLbl.TextScaled= true
     begLbl.ZIndex= 103
     begLbl.Parent= dialog
@@ -527,7 +527,7 @@ local function createConfirmation(title, message, beg, callback)
     noButton.BackgroundColor3= Color3.fromRGB(80, 80, 80)
     noButton.TextColor3= Color3.new(1, 1, 1)
     noButton.Text= "NO"
-    noButton.Font= Enum.Font.FredokaOne
+    noButton.Font= Enum.Font.GothamBold
     noButton.TextScaled = true
     noButton.ZIndex= 104
     noButton.Parent= buttonContainer
@@ -541,32 +541,32 @@ local function createConfirmation(title, message, beg, callback)
     yesButton.BackgroundColor3= Color3.fromRGB(180, 60, 60)
     yesButton.TextColor3= Color3.new(1, 1, 1)
     yesButton.Text= "YES"
-    yesButton.Font= Enum.Font.FredokaOne
+    yesButton.Font= Enum.Font.GothamBold
     yesButton.TextScaled= true
     yesButton.ZIndex= 104
     yesButton.Parent= buttonContainer
     
     AllAround(yesButton, 8)
     createGradient(yesButton, Color3.fromRGB(200, 70, 70), Color3.fromRGB(160, 50, 50))
-
-	
+    
     
     noButton.MouseButton1Click:Connect(function()
         confirmationFrame:Destroy()
     end)
     local ClickCount = 0
-local maxClicks = 3
+local maxClicks = 1
 local startColor = yesButton.BackgroundColor3 -- initial color
 local endColor = Color3.fromRGB(255, 0, 0)   -- full red
 
-
+yesButton.MouseButton1Click:Connect(function()
+    
     ClickCount = ClickCount + 1
     
     -- Lerp color between startColor and full red based on ClickCount
     local t = ClickCount / maxClicks
     yesButton.BackgroundColor3 = startColor:Lerp(endColor, t)
     
-    yesButton.Text = "Yes (" .. ClickCount .. "/3)"
+    yesButton.Text = "Yes (" .. ClickCount .. "/1)"
     
     if ClickCount >= maxClicks then
         confirmationFrame:Destroy()
