@@ -1,4 +1,4 @@
--- POR KAIOX 
+-- POR KAIOX 🗯️
 if getgenv().EmotesGay == true then
 return end
 getgenv().EmotesGay = true
