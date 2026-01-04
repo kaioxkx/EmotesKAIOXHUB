@@ -240,10 +240,10 @@ if UserInputService.TouchEnabled then
     Button.Size = UDim2.new(0,60,0,60)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
-    Button.Text = ":3"
+    Button.Text = "EMOTES"
     Button.TextScaled = true
     Button.TextColor3 = Color3.new(1,1,1)
-    Button.Font = Enum.Font.SourceSansBold
+    Button.Font = Enum.Font.FredokaOne
     Button.BackgroundColor3 = Color3.new(0,0,0)
     Button.BackgroundTransparency = 0.2
     Button.Draggable = true
@@ -298,9 +298,9 @@ gazeLabel = Instance.new("TextLabel")
 gazeLabel.Size = UDim2.new(0, scale("X", 70), 0, scale("Y", 28))
 gazeLabel.Position = UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 gazeLabel.BackgroundTransparency = 1
-gazeLabel.Text = "By Gaze_"
+gazeLabel.Text = "POR KAIOX"
 gazeLabel.TextColor3 = Color3.new(1, 1, 1)
-gazeLabel.Font = Enum.Font.Gotham
+gazeLabel.Font = Enum.Font.FredokaOne
 gazeLabel.TextScaled = true
 gazeLabel.TextXAlignment = Enum.TextXAlignment.Right
 gazeLabel.Parent = topBar
@@ -310,9 +310,9 @@ searchBox.Size= UDim2.new(0, scale("X", 200), 0, scale("Y", 28))
 searchBox.Position= UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 searchBox.BackgroundColor3= Color3.fromRGB(30, 30, 30)
 searchBox.TextColor3= Color3.new(1, 1, 1)
-searchBox.PlaceholderText= "Search emotes..."
+searchBox.PlaceholderText= "PESQUISAR..."
 searchBox.PlaceholderColor3= Color3.new(0.7, 0.7, 0.7)
-searchBox.Font= Enum.Font.Gotham
+searchBox.Font= Enum.Font.FredokaOne
 searchBox.TextScaled= true
 searchBox.Text= ""
 searchBox.ClearTextOnFocus= false
@@ -1598,4 +1598,4 @@ end)
 
 
 refresh()
-DoNotif(":3 Emotes","Loaded I Think?", 10)
+DoNotif("EMOTES","KAIOX HUB", 10)
