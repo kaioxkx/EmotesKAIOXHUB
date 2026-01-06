@@ -1150,7 +1150,7 @@ end)
 
  function createPlaceholderEmote()
     local newEmote= {
-        n= "PlaceHolder",
+        n= "emote",
         id= 0,  
         price= 0,
         cr= os.date("%b %d, %Y"), 
@@ -1251,8 +1251,8 @@ currentLoopId = currentLoopId + 1
         elseif mode== "NOVO" then
             local function parseDate(dateStr)
                 local months= {
-                    Jan= 1, Feb= 2, Mar= 3, Apr= 4, May= 5, Jun= 6,
-                    Jul= 7, Aug= 8, Sep= 9, Oct= 10, Nov= 11, Dec= 12
+                    Jan= 1, Fev= 2, Mar= 3, abril= 4, Maio= 5, Jun= 6,
+                    Jul= 7, Aug= 8, Set= 9, Outubro= 10, Nov= 11, Dez= 12
                 }
                 local month, day, year= dateStr:match("(%a+) (%d+), (%d+)")
                 return os.time({year= tonumber(year), month= months[month], day= tonumber(day)})
@@ -1264,7 +1264,7 @@ currentLoopId = currentLoopId + 1
         elseif mode== "old" then
             local function parseDate(dateStr)
                 local months= {
-                    Jan= 1, Feb= 2, Mar= 3, ABRIL= 4, Maio= 5, Jun= 6,
+                    Jan= 1, Fev= 2, Mar= 3, abril= 4, Maio= 5, Jun= 6,
                     Jul= 7, Aug= 8, Set= 9, Outubro= 10, Nov= 11, Dez= 12
                 }
                 local month, day, year= dateStr:match("(%a+) (%d+), (%d+)")
