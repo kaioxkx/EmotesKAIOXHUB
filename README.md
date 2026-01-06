@@ -413,7 +413,7 @@ createGradient(filterFrame, Color3.fromRGB(50, 50, 50), Color3.fromRGB(40, 40, 4
     return b
 end
 
- sortModes= {"New", "Old", "Expensive", "Cheap", "A-Z", "Z-A"}
+ sortModes= {"NOVO", "ANTIGO", "CARO", "BARATO", "A-Z", "Z-A"}
  sortIndex= 1
  ugcOnly= nil
  searchText= ""
@@ -530,7 +530,7 @@ local function createConfirmation(title, message, beg, callback)
     noButton.Text= "NÃO"
     noButton.Font= Enum.Font.FredokaOne
     noButton.TextScaled = true
-    noButton.ZIndex= 104
+    noButton.ZIndex= 19999999
     noButton.Parent= buttonContainer
     
     AllAround(noButton, 8)
@@ -544,7 +544,7 @@ local function createConfirmation(title, message, beg, callback)
     yesButton.Text= "SIM"
     yesButton.Font= Enum.Font.FredokaOne
     yesButton.TextScaled= true
-    yesButton.ZIndex= 104
+    yesButton.ZIndex= 19999999
     yesButton.Parent= buttonContainer
     
     AllAround(yesButton, 8)
