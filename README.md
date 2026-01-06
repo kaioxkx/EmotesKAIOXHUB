@@ -112,13 +112,10 @@ local function GazePain()
     return "Another " .. LineStuff[math.random(1, #LineStuff)]
 end
 
-task.delay(10, function()
+task.delay(5, function()
     DoNotif("MENSAGEM:","OPAA BÃO?!🤠👍", 5)
 end)
 
-task.delay(12, function()
-    DoNotif("MENSAGEM:", GazePain(), 10)
-end)
 
 
  Players= Services.Players
