@@ -101,7 +101,6 @@ end
 
 
  
- DoNotif("Origin V 5.16","RandomEmote BugFix", 10)
 
 
 local LineStuff = {
@@ -297,9 +296,9 @@ gazeLabel = Instance.new("TextLabel")
 gazeLabel.Size = UDim2.new(0, scale("X", 70), 0, scale("Y", 28))
 gazeLabel.Position = UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 gazeLabel.BackgroundTransparency = 1
-gazeLabel.Text = "By Gaze_"
+gazeLabel.Text = "POR KAIOX"
 gazeLabel.TextColor3 = Color3.new(1, 1, 1)
-gazeLabel.Font = Enum.Font.Gotham
+gazeLabel.Font = Enum.Font.FredokaOne
 gazeLabel.TextScaled = true
 gazeLabel.TextXAlignment = Enum.TextXAlignment.Right
 gazeLabel.Parent = topBar
@@ -309,9 +308,9 @@ searchBox.Size= UDim2.new(0, scale("X", 200), 0, scale("Y", 28))
 searchBox.Position= UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 searchBox.BackgroundColor3= Color3.fromRGB(30, 30, 30)
 searchBox.TextColor3= Color3.new(1, 1, 1)
-searchBox.PlaceholderText= "Search emotes..."
+searchBox.PlaceholderText= "PESQUISAR EMOTES..."
 searchBox.PlaceholderColor3= Color3.new(0.7, 0.7, 0.7)
-searchBox.Font= Enum.Font.Gotham
+searchBox.Font= Enum.Font.FredokaOne
 searchBox.TextScaled= true
 searchBox.Text= ""
 searchBox.ClearTextOnFocus= false
@@ -326,7 +325,7 @@ minButton.Position= UDim2.new(1, -scale("X", 95), 0.5, -scale("Y", 17.5))
 minButton.BackgroundTransparency= 1
 minButton.TextColor3= Color3.new(1, 1, 1)
 minButton.Text= "-"
-minButton.Font= Enum.Font.GothamBold
+minButton.Font= Enum.Font.FredokaOne
 minButton.TextScaled= true
 minButton.ZIndex= 3
 minButton.Parent= topBar
@@ -338,7 +337,7 @@ closeButton.Position= UDim2.new(1, -scale("X", 65), 0.5, -scale("Y", 17.5))
 closeButton.BackgroundTransparency= 1
 closeButton.TextColor3= Color3.new(1, 1, 1)
 closeButton.Text= "×"
-closeButton.Font= Enum.Font.GothamBold
+closeButton.Font= Enum.Font.FredokaOne
 closeButton.TextScaled= true
 closeButton.ZIndex= 3
 closeButton.Parent= topBar
@@ -528,8 +527,8 @@ local function createConfirmation(title, message, beg, callback)
     noButton.Position= UDim2.new(0, 0, 0, 0)
     noButton.BackgroundColor3= Color3.fromRGB(80, 80, 80)
     noButton.TextColor3= Color3.new(1, 1, 1)
-    noButton.Text= "NO"
-    noButton.Font= Enum.Font.GothamBold
+    noButton.Text= "NÃO"
+    noButton.Font= Enum.Font.FredokaOne
     noButton.TextScaled = true
     noButton.ZIndex= 104
     noButton.Parent= buttonContainer
@@ -542,8 +541,8 @@ local function createConfirmation(title, message, beg, callback)
     yesButton.Position= UDim2.new(0.55, 0, 0, 0)
     yesButton.BackgroundColor3= Color3.fromRGB(180, 60, 60)
     yesButton.TextColor3= Color3.new(1, 1, 1)
-    yesButton.Text= "YES"
-    yesButton.Font= Enum.Font.GothamBold
+    yesButton.Text= "SIM"
+    yesButton.Font= Enum.Font.FredokaOne
     yesButton.TextScaled= true
     yesButton.ZIndex= 104
     yesButton.Parent= buttonContainer
@@ -556,12 +555,12 @@ local function createConfirmation(title, message, beg, callback)
         confirmationFrame:Destroy()
     end)
     local ClickCount = 0
-local maxClicks = 3
+local maxClicks = 1
 local startColor = yesButton.BackgroundColor3 -- initial color
 local endColor = Color3.fromRGB(255, 0, 0)   -- full red
 
 yesButton.MouseButton1Click:Connect(function()
-    SoundPlay.CustomId = "rbxassetid://131708837601656"
+    
     
     ClickCount = ClickCount + 1
     
@@ -569,7 +568,7 @@ yesButton.MouseButton1Click:Connect(function()
     local t = ClickCount / maxClicks
     yesButton.BackgroundColor3 = startColor:Lerp(endColor, t)
     
-    yesButton.Text = "Yes (" .. ClickCount .. "/3)"
+    yesButton.Text = "Yes (" .. ClickCount .. "/1)"
     
     if ClickCount >= maxClicks then
         confirmationFrame:Destroy()
