@@ -693,7 +693,7 @@ end
     local titleLabel= Instance.new("TextLabel")
     titleLabel.Size= UDim2.new(0, scale("X", 250), 1, 0)
     titleLabel.BackgroundTransparency= 1
-    titleLabel.Text= "EDITAR EMOTE: "..emote.n
+    titleLabel.Text= "EDITAR EMOTE: "
     titleLabel.TextColor3= Color3.new(1, 1, 1)
     titleLabel.Font= Enum.Font.FredokaOne
     titleLabel.TextScaled = true
