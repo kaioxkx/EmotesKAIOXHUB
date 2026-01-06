@@ -601,6 +601,7 @@ closeButton.MouseButton1Click:Connect(function()
     createConfirmation(
         "FECHAR GUI", 
         "DESEJA FECHAR?",
+		"",
         function()
             gui:Destroy()
             getgenv().EmotesGay = false
