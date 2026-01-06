@@ -255,7 +255,11 @@ if UserInputService.TouchEnabled then
     local UICorner = Instance.new("UICorner", Button)
     UICorner.CornerRadius = UDim.new(1,0)
 
-    
+local tweenInfo = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+    local squish = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,60,0,60)})
+    local normal = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,60,0,60)})
+    local pressed = TweenService:Create(Button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0,60,0,60)})
+	
     Button.MouseButton1Down:Connect(function() pressed:Play() end)
     Button.MouseButton1Up:Connect(function() normal:Play() end)
 
