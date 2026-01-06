@@ -693,7 +693,7 @@ end
     local titleLabel= Instance.new("TextLabel")
     titleLabel.Size= UDim2.new(0, scale("X", 250), 1, 0)
     titleLabel.BackgroundTransparency= 1
-    titleLabel.Text= "EDITAR EMOTE: "
+    titleLabel.Text= "ADICIONAR EMOTE"
     titleLabel.TextColor3= Color3.new(1, 1, 1)
     titleLabel.Font= Enum.Font.FredokaOne
     titleLabel.TextScaled = true
@@ -773,9 +773,9 @@ end
     previewLabel.Size= UDim2.new(1, -scale("X", 20), 0, scale("Y", 30))
     previewLabel.Position= UDim2.new(0, scale("X", 10), 0.8, scale("Y", 10))
     previewLabel.BackgroundTransparency= 1
-    previewLabel.Text= emote.n
+    previewLabel.Text= EMOTE
     previewLabel.TextColor3= Color3.new(1, 1, 1)
-    previewLabel.Font= Enum.Font.GothamBold
+    previewLabel.Font= Enum.Font.FredokaOne
     previewLabel.TextScaled = true
     previewLabel.ZIndex= 53
     previewLabel.Parent= previewFrame
@@ -822,7 +822,7 @@ end
         box.Size= UDim2.new(1, 0, 1, 0)
         box.BackgroundColor3= Color3.fromRGB(30, 30, 30)
         box.TextColor3= Color3.new(1, 1, 1)
-        box.Text= tostring(value)
+        box.Text= EMOTE...
         box.Font= Enum.Font.FredokaOne
         box.TextScaled = true
         box.ZIndex= 55
@@ -1165,7 +1165,7 @@ end)
     refresh()
 end
 
-local addBtn= makeBtn("ADICIONAR", scale("Y", 10), function()
+local addBtn= makeBtn("old", scale("Y", 10), function()
     createPlaceholderEmote()
 end)
 
