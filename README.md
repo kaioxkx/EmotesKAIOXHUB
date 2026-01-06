@@ -1150,7 +1150,7 @@ end)
 
  function createPlaceholderEmote()
     local newEmote= {
-        n= "Placeholder",
+        n= "PlaceHolder",
         id= 0,  
         price= 0,
         cr= os.date("%b %d, %Y"), 
