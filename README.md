@@ -845,11 +845,11 @@ end
     end
     
     
-    local nameBox= addField("Name:", emote.n)
+    local nameBox= addField("NOME:", emote.n)
     local idBox= addField("ID:", emote.id)
-    local priceBox= addField("Price:", emote.price, true)
-    local imageBox= addField("Image ID:", emote.imageId or emote.id)
-    local dateBox= addField("Date:", emote.cr) -- Date field
+    local priceBox= addField("PREÇO:", emote.price, true)
+    local imageBox= addField("IMAGEM ID:", emote.imageId or emote.id)
+    local dateBox= addField("DATA:", emote.cr) -- Date field
     
     
     imageBox.FocusLost:Connect(function()
@@ -1031,6 +1031,7 @@ end
         createConfirmation(
             "EXCLUIR EMOTE",
             "DESEJA EXCLUIR ESSE EMOTE?",
+			"",
             function()
                 
                 for i, e in ipairs(emotes) do
@@ -1164,16 +1165,16 @@ end)
     refresh()
 end
 
-local addBtn= makeBtn("Add New", scale("Y", 10), function()
+local addBtn= makeBtn("ADICIONAR", scale("Y", 10), function()
     createPlaceholderEmote()
 end)
 
-local sortBtn= makeBtn("Sort: "..sortModes[sortIndex], scale("Y", 55), function(btn)
+local sortBtn= makeBtn("ORGANIZAR: "..sortModes[sortIndex], scale("Y", 55), function(btn)
     sortIndex= sortIndex % #sortModes + 1
     refresh()
 end)
 
-local ugcBtn= makeBtn("All", scale("Y", 100), function(btn)
+local ugcBtn= makeBtn("TUDO", scale("Y", 100), function(btn)
     if ugcOnly== nil then
         ugcOnly= true
     elseif ugcOnly== true then
@@ -1263,8 +1264,8 @@ currentLoopId = currentLoopId + 1
         elseif mode== "ANTIGO" then
             local function parseDate(dateStr)
                 local months= {
-                    Jan= 1, Feb= 2, Mar= 3, Apr= 4, May= 5, Jun= 6,
-                    Jul= 7, Aug= 8, Sep= 9, Oct= 10, Nov= 11, Dec= 12
+                    Jan= 1, Feb= 2, Mar= 3, ABRIL= 4, Maio= 5, Jun= 6,
+                    Jul= 7, Aug= 8, Set= 9, Outubro= 10, Nov= 11, Dez= 12
                 }
                 local month, day, year= dateStr:match("(%a+) (%d+), (%d+)")
                 return os.time({year= tonumber(year), month= months[month], day= tonumber(day)})
@@ -1361,7 +1362,7 @@ currentLoopId = currentLoopId + 1
             favButton.Name= "FavButton"
             favButton.Size= UDim2.new(1, 0, 1, 0)
             favButton.Font= Enum.Font.GothamBold
-            favButton.Text= "Silly!"
+            favButton.Text= "OLOKO!"
             favButton.TextScaled= true
             favButton.Parent= favBtnContainer
             
