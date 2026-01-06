@@ -1,4 +1,4 @@
--- por KAIOX 
+-- POR KAIOX 
 if getgenv().EmotesGay == true then
 return end
 getgenv().EmotesGay = true
@@ -77,7 +77,7 @@ local StarterGui = game:GetService("StarterGui")
 
 repeat
 local success, result = pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox2/refs/heads/main/README.md"))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/kaioxkx/Emoteskaiox/refs/heads/main/README.md"))()
 	end)
 
 	if success then
@@ -1631,4 +1631,4 @@ end)
 
 
 refresh()
-DoNotif(":3 Emotes","Loaded I Think?", 10)
+DoNotif(":3 Emotes","Loaded I Think?", 10) 
