@@ -284,9 +284,9 @@ AllAround(topBar, 12)
  title= Instance.new("TextLabel")
 title.Size= UDim2.new(0, scale("X", 80), 0, scale("Y", 45))
 title.BackgroundTransparency= 1
-title.Text= ":3 Emotes"
+title.Text= "EMOTES\nKAIOX HUB🗯️"
 title.TextColor3= Color3.new(1, 1, 1)
-title.Font= Enum.Font.SourceSansBold
+title.Font= Enum.Font.FredokaOne
 title.TextScaled= true
 title.TextXAlignment= Enum.TextXAlignment.Left
 title.Position= UDim2.new(0, 5, 0, 0)
@@ -307,7 +307,7 @@ gazeLabel.Parent = topBar
 searchBox.Size= UDim2.new(0, scale("X", 200), 0, scale("Y", 28))
 searchBox.Position= UDim2.new(0, scale("X", 110), 0.5, -scale("Y", 14))
 searchBox.BackgroundColor3= Color3.fromRGB(30, 30, 30)
-searchBox.TextColor3= Color3.new(1, 1, 1)
+searchBox.TextColor3= Color3.new(255, 255, 255)
 searchBox.PlaceholderText= "PESQUISAR EMOTES..."
 searchBox.PlaceholderColor3= Color3.new(0.7, 0.7, 0.7)
 searchBox.Font= Enum.Font.FredokaOne
@@ -599,9 +599,8 @@ end
 
 closeButton.MouseButton1Click:Connect(function()
     createConfirmation(
-        "CLOSE GUI", 
-        "ARE YOU SURE YOU WANT TO CLOSE THIS COOL EMOTE GUI?",
-        "PLEASE DON'T CLOSE ME!",
+        "FECHAR GUI", 
+        "DESEJA FECHAR?",
         function()
             gui:Destroy()
             getgenv().EmotesGay = false
@@ -693,9 +692,9 @@ end
     local titleLabel= Instance.new("TextLabel")
     titleLabel.Size= UDim2.new(0, scale("X", 250), 1, 0)
     titleLabel.BackgroundTransparency= 1
-    titleLabel.Text= "Edit Emote: "..emote.n
+    titleLabel.Text= "EDITAR EMOTE: "..emote.n
     titleLabel.TextColor3= Color3.new(1, 1, 1)
-    titleLabel.Font= Enum.Font.GothamBold
+    titleLabel.Font= Enum.Font.FredokaOne
     titleLabel.TextScaled = true
     titleLabel.TextXAlignment= Enum.TextXAlignment.Left
     titleLabel.Position= UDim2.new(0, scale("X", 15), 0, 0)
@@ -709,7 +708,7 @@ end
     editMinButton.BackgroundTransparency= 1
     editMinButton.TextColor3= Color3.new(1, 1, 1)
     editMinButton.Text= "-"
-    editMinButton.Font= Enum.Font.GothamBold
+    editMinButton.Font= Enum.Font.FredokaOne
     editMinButton.TextScaled = true
     editMinButton.ZIndex= 52
     editMinButton.Parent= titleBar
@@ -721,7 +720,7 @@ end
     editCloseButton.BackgroundTransparency= 1
     editCloseButton.TextColor3= Color3.new(1, 1, 1)
     editCloseButton.Text= "×"
-    editCloseButton.Font= Enum.Font.GothamBold
+    editCloseButton.Font= Enum.Font.FredokaOne
     editCloseButton.TextScaled= true
     editCloseButton.ZIndex= 52
     editCloseButton.Parent= titleBar
@@ -823,7 +822,7 @@ end
         box.BackgroundColor3= Color3.fromRGB(30, 30, 30)
         box.TextColor3= Color3.new(1, 1, 1)
         box.Text= tostring(value)
-        box.Font= Enum.Font.Gotham
+        box.Font= Enum.Font.FredokaOne
         box.TextScaled = true
         box.ZIndex= 55
         box.Parent= boxContainer
@@ -876,9 +875,9 @@ end
     local animLbl= Instance.new("TextLabel")
     animLbl.Size= UDim2.new(0.4, 0, 1, 0)
     animLbl.BackgroundTransparency= 1
-    animLbl.Text= "Animation:"
+    animLbl.Text= "ANIMAÇÃO:"
     animLbl.TextColor3= Color3.new(1, 1, 1)
-    animLbl.Font= Enum.Font.Gotham
+    animLbl.Font= Enum.Font.FredokaOne
     animLbl.TextScaled = true
     animLbl.TextXAlignment= Enum.TextXAlignment.Left
     animLbl.ZIndex= 54
@@ -896,9 +895,9 @@ end
     local animToggle= Instance.new("TextButton")
     animToggle.Size= UDim2.new(1, 0, 1, 0)
     animToggle.BackgroundColor3= emote.isAnimation and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
-    animToggle.Text= emote.isAnimation and "YES" or "NO"
+    animToggle.Text= emote.isAnimation and "SIM" or "NÃO"
     animToggle.TextColor3= Color3.new(1, 1, 1)
-    animToggle.Font= Enum.Font.GothamBold
+    animToggle.Font= Enum.Font.FredokaOne
     animToggle.TextScaled = true
     animToggle.ZIndex= 55
     animToggle.Parent= animToggleContainer
@@ -907,7 +906,7 @@ end
     
     animToggle.MouseButton1Click:Connect(function()
         emote.isAnimation= not emote.isAnimation
-        animToggle.Text= emote.isAnimation and "YES" or "NO"
+        animToggle.Text= emote.isAnimation and "SIM" or "NÃO"
         animToggle.BackgroundColor3= emote.isAnimation and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
     end)
     
@@ -927,7 +926,7 @@ end
     ugcLbl.BackgroundTransparency= 1
     ugcLbl.Text= "UGC:"
     ugcLbl.TextColor3= Color3.new(1, 1, 1)
-    ugcLbl.Font= Enum.Font.Gotham
+    ugcLbl.Font= Enum.Font.FredokaOne
     ugcLbl.TextScaled = true
     ugcLbl.TextXAlignment= Enum.TextXAlignment.Left
     ugcLbl.ZIndex= 54
@@ -945,9 +944,9 @@ end
     local ugcToggle= Instance.new("TextButton")
     ugcToggle.Size= UDim2.new(1, 0, 1, 0)
     ugcToggle.BackgroundColor3= emote.ugc and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
-    ugcToggle.Text= emote.ugc and "YES" or "NO"
+    ugcToggle.Text= emote.ugc and "SIM" or "NÃO"
     ugcToggle.TextColor3= Color3.new(1, 1, 1)
-    ugcToggle.Font= Enum.Font.GothamBold
+    ugcToggle.Font= Enum.Font.FredokaOne
     ugcToggle.TextScaled = true
     ugcToggle.ZIndex= 55
     ugcToggle.Parent= ugcToggleContainer
@@ -956,7 +955,7 @@ end
     
     ugcToggle.MouseButton1Click:Connect(function()
         emote.ugc= not emote.ugc
-        ugcToggle.Text= emote.ugc and "YES" or "NO"
+        ugcToggle.Text= emote.ugc and "SIM" or "NÃO"
         ugcToggle.BackgroundColor3= emote.ugc and Color3.new(0, 0.5, 0) or Color3.new(0.5, 0, 0)
     end)
     
@@ -983,9 +982,9 @@ end
     local saveBtn= Instance.new("TextButton")
     saveBtn.Size= UDim2.new(1, 0, 1, 0)
     saveBtn.BackgroundColor3= Color3.new(0, 0.5, 0)
-    saveBtn.Text= "SAVE CHANGES"
+    saveBtn.Text= "SALVAR"
     saveBtn.TextColor3= Color3.new(1, 1, 1)
-    saveBtn.Font= Enum.Font.GothamBold
+    saveBtn.Font= Enum.Font.FredokaOne
     saveBtn.TextScaled = true
     saveBtn.ZIndex= 55
     saveBtn.Parent= saveBtnContainer
@@ -1017,9 +1016,9 @@ end
     local deleteBtn= Instance.new("TextButton")
     deleteBtn.Size= UDim2.new(1, 0, 1, 0)
     deleteBtn.BackgroundColor3= Color3.new(0.5, 0, 0)
-    deleteBtn.Text= "DELETE EMOTE"
+    deleteBtn.Text= "DELETAR EMOTE"
     deleteBtn.TextColor3= Color3.new(1, 1, 1)
-    deleteBtn.Font= Enum.Font.GothamBold
+    deleteBtn.Font= Enum.Font.FredokaOne
     deleteBtn.TextScaled = true
     deleteBtn.ZIndex= 55
     deleteBtn.Parent= deleteBtnContainer
@@ -1029,14 +1028,13 @@ end
     
     deleteBtn.MouseButton1Click:Connect(function()
         createConfirmation(
-            "DELETE EMOTE",
-            "ARE YOU SURE YOU WANT TO PERMANENTLY DELETE THIS EMOTE?",
-            "THIS CANNOT BE UNDONE!",
+            "EXCLUIR EMOTE",
+            "DESEJA EXCLUIR ESSE EMOTE?",
             function()
                 
                 for i, e in ipairs(emotes) do
                     if e== emote then
-                    DoNotif("Emote Removed", "Please dont cry Abt It :D" )
+                    DoNotif("MENSAGEM:", "Emote excluído" )
                         table.remove(emotes, i)
                         break
                     end
@@ -1149,7 +1147,6 @@ RunService.Heartbeat:Connect(function()
 end)
 
  function createPlaceholderEmote()
- DoNotif(":3 Emotes","Placeholder Created", 10)
     local newEmote= {
         n= "PlaceHolder",
         id= 0,  
@@ -1197,7 +1194,7 @@ currentLoopId = currentLoopId + 1
     sortBtn.Text= "Sort: "..sortModes[sortIndex]
     
     if ugcOnly== nil then
-        ugcBtn.Text= "All"
+        ugcBtn.Text= "TUDO"
     elseif ugcOnly== true then
         ugcBtn.Text= "UGC"
     else
@@ -1245,11 +1242,11 @@ currentLoopId = currentLoopId + 1
             return a.n < b.n
         elseif mode== "Z-A" then
             return a.n > b.n
-        elseif mode== "Expensive" then
+        elseif mode== "CARO" then
             return a.price > b.price
-        elseif mode== "Cheap" then
+        elseif mode== "BARATO" then
             return a.price < b.price
-        elseif mode== "New" then
+        elseif mode== "NOVO" then
             local function parseDate(dateStr)
                 local months= {
                     Jan= 1, Feb= 2, Mar= 3, Apr= 4, May= 5, Jun= 6,
@@ -1262,7 +1259,7 @@ currentLoopId = currentLoopId + 1
             local timeA= a.cr and parseDate(a.cr) or 0
             local timeB= b.cr and parseDate(b.cr) or 0
             return timeA > timeB
-        elseif mode== "Old" then
+        elseif mode== "ANTIGO" then
             local function parseDate(dateStr)
                 local months= {
                     Jan= 1, Feb= 2, Mar= 3, Apr= 4, May= 5, Jun= 6,
@@ -1385,7 +1382,7 @@ currentLoopId = currentLoopId + 1
             editButton.Name= "EditButton"
             editButton.Size= UDim2.new(1, 0, 1, 0)
             editButton.BackgroundColor3= Color3.fromRGB(80, 80, 80)
-            editButton.Text= "Emotes"
+            editButton.Text= "EMOTES"
             editButton.TextColor3= Color3.new(0.8, 0.8, 1)
             editButton.Font= Enum.Font.GothamBold
             editButton.TextScaled = true
@@ -1421,7 +1418,7 @@ currentLoopId = currentLoopId + 1
             animIndicator.BackgroundTransparency= 1
             animIndicator.Text= "ANIMATION"
             animIndicator.TextColor3= Color3.new(0.5, 1, 0.5)
-            animIndicator.Font= Enum.Font.GothamBold
+            animIndicator.Font= Enum.Font.FredokaOne
             animIndicator.TextScaled = true
             animIndicator.Visible= false
             animIndicator.Parent= container
@@ -1432,9 +1429,9 @@ currentLoopId = currentLoopId + 1
             lbl.Position= UDim2.new(0, scale("X", 2), 0, scale("Y", 110))
             lbl.BackgroundTransparency= 1
             lbl.TextColor3= Color3.new(1, 1, 1)
-            lbl.Text = ":3"
+            lbl.Text = "KAIOX HUB"
             lbl.TextScaled = true
-            lbl.Font= Enum.Font.GothamBold
+            lbl.Font= Enum.Font.FredokaOne
             lbl.TextWrapped= true
             lbl.Parent= container
             elements.lbl= lbl
@@ -1444,7 +1441,7 @@ currentLoopId = currentLoopId + 1
             dateLbl.Position= UDim2.new(0, scale("X", 2), 1, -scale("Y", 5))
             dateLbl.BackgroundTransparency= 1
             dateLbl.TextColor3= Color3.new(0.7, 0.7, 0.7)
-            dateLbl.Font= Enum.Font.Gotham
+            dateLbl.Font= Enum.Font.FredokaOne
             dateLbl.TextScaled = true
             dateLbl.Parent= container
             elements.dateLbl= dateLbl
@@ -1461,9 +1458,9 @@ currentLoopId = currentLoopId + 1
             playButton.Name= "PlayButton"
             playButton.Size= UDim2.new(1, 0, 1, 0)
             playButton.BackgroundColor3= Color3.fromRGB(60, 180, 60)
-            playButton.Text= "PLAY"
+            playButton.Text= "COMEÇAR"
             playButton.TextColor3= Color3.new(1, 1, 1)
-            playButton.Font= Enum.Font.GothamBold
+            playButton.Font= Enum.Font.FredokaOne
             playButton.TextScaled = true
             playButton.AutoButtonColor= false
             playButton.Parent= playBtnContainer
@@ -1596,4 +1593,4 @@ end)
 
 
 refresh()
-DoNotif(":3 Emotes","Loaded I Think?", 10) 
+DoNotif("BEM VINDO AO","EMOTES KAIOX HUB🗯️", 5) 
