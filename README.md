@@ -1193,7 +1193,7 @@ function refresh()
 currentLoopId = currentLoopId + 1
     local thisLoopId = currentLoopId
 
-    sortBtn.Text= "Sort: "..sortModes[sortIndex]
+    sortBtn.Text= ""..sortModes[sortIndex]
     
     if ugcOnly== nil then
         ugcBtn.Text= "TUDO"
