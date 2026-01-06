@@ -773,7 +773,7 @@ end
     previewLabel.Size= UDim2.new(1, -scale("X", 20), 0, scale("Y", 30))
     previewLabel.Position= UDim2.new(0, scale("X", 10), 0.8, scale("Y", 10))
     previewLabel.BackgroundTransparency= 1
-    previewLabel.Text= EMOTE 
+    previewLabel.Text= emote.n
     previewLabel.TextColor3= Color3.new(1, 1, 1)
     previewLabel.Font= Enum.Font.FredokaOne
     previewLabel.TextScaled = true
@@ -1165,7 +1165,7 @@ end)
     refresh()
 end
 
-local addBtn= makeBtn("old", scale("Y", 10), function()
+local addBtn= makeBtn("ADICIONAR", scale("Y", 10), function()
     createPlaceholderEmote()
 end)
 
@@ -1261,7 +1261,7 @@ currentLoopId = currentLoopId + 1
             local timeA= a.cr and parseDate(a.cr) or 0
             local timeB= b.cr and parseDate(b.cr) or 0
             return timeA > timeB
-        elseif mode== "ANTIGO" then
+        elseif mode== "old" then
             local function parseDate(dateStr)
                 local months= {
                     Jan= 1, Feb= 2, Mar= 3, ABRIL= 4, Maio= 5, Jun= 6,
