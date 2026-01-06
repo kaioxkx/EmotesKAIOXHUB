@@ -106,36 +106,7 @@ end
 
 
 local LineStuff = {
-    "applied duct tape..",
-    "99 new bugs shipped!",
-    "lag optimized (™ placebo)",
-    "patch v0.0.0.1.1.1b",
-    "free bugs DLC",
-    "oops all errors",
-    "syntax% any% WR attempt",
-    "fixed nothing, broke everything",
-    "hotfix for the hotfix of the hotfix",
-    "added new ways to crash",
-    "commit message: 'final_final_REALfix'",
-    "lag machine now 20% faster",
-    "deleted prod on accident..",
-    "balance patch (everything worse)",
-    "code works on my PC™",
-    "early access to more bugs",
-    "new feature: random crashes",
-    "speedrun to blue screen",
-    "patch notes redacted ",
-    "implemented spaghetti mode ",
-    "downgrade disguised as upgrade",
-    "half a fix, twice the issues",
-    "added bug multiplier",
-    "AI wrote this update, blame it",
-    "release notes missing",
-    "debug mode left on (oops)",
-    "typo patch (added new typo)",
-    "rollback simulator v2",
-    "minor fixes, major disasters",
-    "randomized everything for fun",
+    
 }
 
 local function GazePain()
@@ -273,10 +244,10 @@ if UserInputService.TouchEnabled then
     Button.Size = UDim2.new(0,60,0,60)
     Button.Position = UDim2.new(0.65,0,0.45,0)
     Button.AnchorPoint = Vector2.new(0.5,0.5)
-    Button.Text = ":3"
+    Button.Text = "EMOTES"
     Button.TextScaled = true
     Button.TextColor3 = Color3.new(1,1,1)
-    Button.Font = Enum.Font.SourceSansBold
+    Button.Font = Enum.Font.FredokaOne
     Button.BackgroundColor3 = Color3.new(0,0,0)
     Button.BackgroundTransparency = 0.2
     Button.Draggable = true
