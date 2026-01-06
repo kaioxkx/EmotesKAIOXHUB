@@ -773,7 +773,7 @@ end
     previewLabel.Size= UDim2.new(1, -scale("X", 20), 0, scale("Y", 30))
     previewLabel.Position= UDim2.new(0, scale("X", 10), 0.8, scale("Y", 10))
     previewLabel.BackgroundTransparency= 1
-    previewLabel.Text= Placeholder
+    previewLabel.Text= emote.n
     previewLabel.TextColor3= Color3.new(1, 1, 1)
     previewLabel.Font= Enum.Font.FredokaOne
     previewLabel.TextScaled = true
@@ -822,7 +822,7 @@ end
         box.Size= UDim2.new(1, 0, 1, 0)
         box.BackgroundColor3= Color3.fromRGB(30, 30, 30)
         box.TextColor3= Color3.new(1, 1, 1)
-        box.Text= EMOTE...
+        box.Text= tostring(value)
         box.Font= Enum.Font.FredokaOne
         box.TextScaled = true
         box.ZIndex= 55
