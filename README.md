@@ -92,7 +92,6 @@ local Notify = Notification.Notify
 
 
 function DoNotif(title, text, duration)
-SoundPlay.CustomId = "rbxassetid://6655708496"
 	Notify({
 		Title = title or adminName or nil,
 		Description = text or "something",
@@ -101,7 +100,7 @@ SoundPlay.CustomId = "rbxassetid://6655708496"
 end
 
 
- SoundPlay.CustomId = "rbxassetid://2084290015"
+ 
  DoNotif("Origin V 5.16","RandomEmote BugFix", 10)
 
 
@@ -114,11 +113,11 @@ local function GazePain()
 end
 
 task.delay(10, function()
-    DoNotif(":3 Emotes","Another day..", 5)
+    DoNotif("MENSAGEM:","OPAA BÃO?!🤠👍", 5)
 end)
 
 task.delay(12, function()
-    DoNotif(":3 Emotes", GazePain(), 10)
+    DoNotif("MENSAGEM:", GazePain(), 10)
 end)
 
 
@@ -249,18 +248,14 @@ if UserInputService.TouchEnabled then
     Button.TextColor3 = Color3.new(1,1,1)
     Button.Font = Enum.Font.FredokaOne
     Button.BackgroundColor3 = Color3.new(0,0,0)
-    Button.BackgroundTransparency = 0.2
+    Button.BackgroundTransparency = 0.5
     Button.Draggable = true
     Button.Active = true
 
     local UICorner = Instance.new("UICorner", Button)
     UICorner.CornerRadius = UDim.new(1,0)
 
-    local tweenInfo = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-    local squish = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,75,0,50)})
-    local normal = TweenService:Create(Button, tweenInfo, {Size = UDim2.new(0,60,0,60)})
-    local pressed = TweenService:Create(Button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0,55,0,55)})
-
+    
     Button.MouseButton1Down:Connect(function() pressed:Play() end)
     Button.MouseButton1Up:Connect(function() normal:Play() end)
 
@@ -271,7 +266,6 @@ if UserInputService.TouchEnabled then
 
         main.Visible = not main.Visible
         gui.Enabled = not gui.Enabled
-        SoundPlay.CustomId = "rbxassetid://97221552913350"
 
         if main.Visible == true then
             main.Position = UDim2.new(0.5, 0, 0.5, 0)
